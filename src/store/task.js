@@ -35,6 +35,7 @@ const taskSlice = createSlice({
     taskRequestFailed(state, action) {
       state.isLoading = false
     },
+    taskCreate(state, action) {},
   },
 })
 
@@ -62,6 +63,10 @@ export function titleChanged(id) {
 
 export function taskDeleted(id) {
   return remove({ id })
+}
+
+export function taskCreated(id) {
+  return remove({ title, completed })
 }
 
 export const getTasks = () => (state) => state.tasks.entities

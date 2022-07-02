@@ -42,7 +42,7 @@ const App = () => {
   return (
     <>
       <h1>app</h1>
-
+      <button>add task</button>
       <ul>
         {state.map((el) => (
           <li key={el.id}>
