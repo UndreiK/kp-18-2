@@ -33,7 +33,7 @@ const App = () => {
   }
 
   const addNewTask = () => {
-    dispatch(createTask({ userId: 1, title: '123', completed: false }))
+    dispatch(createTask({ title: '123', completed: false }))
   }
 
   if (isLoading) {
